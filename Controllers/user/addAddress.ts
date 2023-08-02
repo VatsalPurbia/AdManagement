@@ -1,7 +1,7 @@
 import express , {Response , Request}from 'express'
 import { addressSchema } from '../../Model/address'
 import jwt from 'jsonwebtoken'
-const addAddress  = async (req : Request , res : Response) => {
+export const addAddress  = async (req : Request , res : Response) => {
     const token = ""+req.headers.authorization
     let decode : any 
     try {

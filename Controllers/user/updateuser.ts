@@ -2,7 +2,7 @@ import express, { Request, Response } from "express";
 import { userSchema } from "../../Model/user";
 import sequelizedb from '../../db/connection'
 import jwt from 'jsonwebtoken'
-const updateUser = async (req: Request, res: Response) => {
+export const updateUser = async (req: Request, res: Response) => {
     const token = "" + req.headers.authorization
     let decode: any
     try {

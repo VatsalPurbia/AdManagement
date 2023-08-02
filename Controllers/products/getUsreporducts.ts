@@ -3,7 +3,7 @@ import { productSchema } from '../../Model/Product'
 import jwt from 'jsonwebtoken'
 import { userSchema } from '../../Model/user'
 
-export const getProduct =async (req : Request , res : Response) => {
+export const getUserProduct =async (req : Request , res : Response) => {
     const token = ""+req.headers.authorization
     let  decode : any 
     try {
